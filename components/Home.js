@@ -45,7 +45,7 @@ function Home() {
     const isLiked = likedMovies.some(movie => movie === data.title);
     const posterURL = 'https://image.tmdb.org/t/p/w500' + data.poster_path;
     const overviewCut = (data.overview.length >= 250) ? (data.overview.slice(0,250) + '...' ) : (data.overview);
-    return <Movie key={i} updateLikedMovies={updateLikedMovies} isLiked={isLiked} title={data.title} overview={overviewCut} poster={posterURL} voteAverage={data.voteAverage} voteCount={data.voteCount} />;
+    return <Movie key={i} updateLikedMovies={updateLikedMovies} isLiked={isLiked} title={data.title} overview={overviewCut} poster={posterURL} voteAverage={data.vote_average} voteCount={data.vote_count} />;
   });
 
   return (
