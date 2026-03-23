@@ -33,7 +33,7 @@ function Home() {
     </div>
   );
 
-  // Movies list
+  // Movies list yeah
   const [moviesData, setMovieData] = useState([]);
   useEffect(() => {
     fetch('https://mymovies-backend-bay.vercel.app/movies')
